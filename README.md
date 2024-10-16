@@ -3,6 +3,7 @@
 <br>
 <br>
 
+
 # Mục Lục
 1. [Giới Thiệu](#giới-thiệu)
 2. [Tiền Xử Lý](#tiền-xử-lý)
@@ -25,6 +26,7 @@ Bộ dữ liệu bao gồm các hình ảnh khuôn mặt có kích thước 48x4
 </div>
 <br>
 <br>
+
 ## Tiền Xử Lý
 
 
