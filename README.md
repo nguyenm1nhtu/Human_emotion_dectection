@@ -2,7 +2,6 @@
 # Human Emotion Dectection
 
 
-
 # Mục Lục
 1. [Giới Thiệu](#giới-thiệu)
 2. [Tiền Xử Lý](#tiền-xử-lý)
