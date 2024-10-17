@@ -7,6 +7,7 @@
 
   1. [Giới Thiệu](#giới-thiệu)
   2. [Tiền Xử Lý](#tiền-xử-lý)
+  3. [Trích xuất đặc trưng CNN](#trích-xuất-đặc-trưng)
 
 </details>
 
@@ -40,3 +41,9 @@ Chuẩn hóa các giá trị pixel từ khoảng [0, 255] về [0, 1] để đ�
 - Mô tả dữ liệu
 
 [Quay lại đầu trang](#top)
+
+## Trích Xuất Đặc Trưng CNN
+Sử dụng CNN để chích xuất các đặc trưng quan trọng từ dữ liệu hình ảnh đã qua tiền xử lý thông qua:
+- Convolution
+- MaxPooling
+- Flatten
