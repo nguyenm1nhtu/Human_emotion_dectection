@@ -20,24 +20,23 @@ Mục tiêu của dự án là phát triển một hệ thống có khả năng 
 - Tiền xử lý dữ liệu: Xử lý và chuẩn hóa dữ liệu hình ảnh để đảm bảo chất lượng dữ liệu đầu vào phù hợp cho mô hình.
 - Phân tích và giảm chiều dữ liệu: Áp dụng các phương pháp như PCA và LDA để giảm chiều dữ liệu, phân tích các thành phần chính, và trực quan hóa dữ liệu.
 - Phân cụm dữ liệu: Sử dụng các thuật toán phân cụm như K-Means, DBScan để nhóm các hình ảnh có biểu cảm tương đồng.
-- Phân loại cảm xúc: Sử dụng ít nhất 3 phương pháp phân loại, bao gồm K-NN, SoftMax, và SVM, để huấn luyện mô hình trên dữ liệu đã tiền xử lý và giảm chiều, sau đó so sánh kết quả.
+- Phân loại cảm xúc: Sử dụng 3 phương pháp phân loại, bao gồm K-NN, SoftMax, và SVM, để huấn luyện mô hình trên dữ liệu đã tiền xử lý và giảm chiều, sau đó so sánh kết quả.
 - Kiểm tra và đánh giá kết quả: Đánh giá hiệu quả của các mô hình dựa trên các chỉ số như accuracy, precision, recall và F1-score. Kiểm tra hiện tượng quá khớp (overfit) và áp dụng biện pháp hiệu chỉnh (regularization) nếu cần.
 - Thực hiện hồi quy: Chuyển bài toán phân loại thành bài toán hồi quy để đánh giá các mô hình dựa trên các giá trị dự đoán và so sánh kết quả trên tập dữ liệu gốc và tập dữ liệu đã giảm chiều.
 
 ### Tổng Quan Về Bộ Dữ Liệu
-Bộ dữ liệu bao gồm các hình ảnh khuôn mặt có kích thước 48x48 pixel ở dạng ảnh xám. Những hình ảnh này đã được tự động căn chỉnh để đảm bảo khuôn mặt nằm ở trung tâm và chiếm cùng một không gian trong mỗi bức hình. Bộ dữ liệu bao gồm 24.400 hình ảnh, trong đó có 22.968 ảnh trong tập huấn luyện và 1.432 ảnh trong tập kiểm tra.
+Bộ dữ liệu bao gồm các hình ảnh khuôn mặt có kích thước 48x48 pixel ở dạng ảnh xám. Những hình ảnh này đã được tự động căn chỉnh để đảm bảo khuôn mặt nằm ở trung tâm và chiếm cùng một không gian trong mỗi bức hình. Bộ dữ liệu bao gồm 8.052 hình ảnh, trong đó có 6.330 ảnh trong tập huấn luyện (train) và 1.722 ảnh trong tập kiểm tra (test).
 
 [Quay lại đầu trang](#top)
 
 ## Tiền Xử Lý
 - Đọc và mô tả dữ liệu:
-Tải dữ liệu, kiểm tra cấu trúc và số lượng bản ghi (22,968 ảnh trong tập huấn luyện, 1,432 ảnh trong tập kiểm tra). Thống kê các giá trị dữ liệu ban đầu (các trường và phân phối nhãn cảm xúc).
-- Xử lý dữ liệu lỗi:
-Xác định và loại bỏ các bản ghi có lỗi (thiếu dữ liệu hoặc sai định dạng).
+Tải dữ liệu, kiểm tra cấu trúc và số lượng bản ghi: 5.066 ảnh trong tập huấn luyện, 1.264 ảnh trong tập xác thực, 1.722 ảnh trong tập kiểm tra. Thống kê các giá trị dữ liệu ban đầu.
 - Chuyển đổi và chuẩn hóa dữ liệu:
 Chuyển nhãn cảm xúc thành dạng one-hot encoding.
 Chuẩn hóa các giá trị pixel từ khoảng [0, 255] về [0, 1] để đảm bảo đồng nhất dữ liệu đầu vào cho mô hình.
 - Tăng cường dữ liệu:
 Áp dụng các kỹ thuật tăng cường dữ liệu như xoay, lật, và dịch chuyển để làm phong phú tập huấn luyện và ngăn ngừa quá khớp.
+- Mô tả dữ liệu
 
 [Quay lại đầu trang](#top)
