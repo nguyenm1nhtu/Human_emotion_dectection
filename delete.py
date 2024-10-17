@@ -1,4 +1,4 @@
-//File này được sử dụng nhằm xóa bớt dữ liệu trong các tệp dữ liệu
+#File này được sử dụng nhằm xóa bớt dữ liệu trong các tệp dữ liệu
 import os
 import random
 
