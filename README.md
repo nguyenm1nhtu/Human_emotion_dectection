@@ -13,7 +13,7 @@
 ## Giới Thiệu
 Phát hiện cảm xúc qua hình ảnh là một lĩnh vực đang phát triển nhanh chóng trong AI, giúp cải thiện các ứng dụng từ chăm sóc sức khỏe đến dịch vụ khách hàng. Đề tài này được chọn nhằm tìm hiểu cách học sâu có thể được sử dụng để phát hiện các cảm xúc thông qua hình ảnh khuôn mặt.
 
-#### Mục tiêu
+### Mục tiêu
 Mục tiêu của dự án là phát triển một hệ thống có khả năng phân loại chính xác các biểu cảm khuôn mặt thành một trong bảy loại cảm xúc: Giận dữ, Ghê tởm, Sợ hãi, Vui vẻ, Buồn bã, Ngạc nhiên và Bình thường. Để thực hiện điều này, dự án sẽ sử dụng các kỹ thuật học máy và học sâu như Convolutional Neural Network (CNN), kết hợp với các phương pháp giảm chiều (PCA, LDA), phân cụm (K-Means, DBScan) và các thuật toán phân loại khác (KNN, SoftMax, SVM) để đánh giá và so sánh hiệu quả.
 
 **Mục tiêu bao gồm:**
@@ -24,10 +24,10 @@ Mục tiêu của dự án là phát triển một hệ thống có khả năng 
 - Kiểm tra và đánh giá kết quả: Đánh giá hiệu quả của các mô hình dựa trên các chỉ số như accuracy, precision, recall và F1-score. Kiểm tra hiện tượng quá khớp (overfit) và áp dụng biện pháp hiệu chỉnh (regularization) nếu cần.
 - Thực hiện hồi quy: Chuyển bài toán phân loại thành bài toán hồi quy để đánh giá các mô hình dựa trên các giá trị dự đoán và so sánh kết quả trên tập dữ liệu gốc và tập dữ liệu đã giảm chiều.
 
-#### Tổng Quan Về Bộ Dữ Liệu
+### Tổng Quan Về Bộ Dữ Liệu
 Bộ dữ liệu bao gồm các hình ảnh khuôn mặt có kích thước 48x48 pixel ở dạng ảnh xám. Những hình ảnh này đã được tự động căn chỉnh để đảm bảo khuôn mặt nằm ở trung tâm và chiếm cùng một không gian trong mỗi bức hình. Bộ dữ liệu bao gồm 24.400 hình ảnh, trong đó có 22.968 ảnh trong tập huấn luyện và 1.432 ảnh trong tập kiểm tra.
 
-<[Quay lại đầu trang](#top)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[Quay lại đầu trang](#top)
 
 ## Tiền Xử Lý
 - Đọc và mô tả dữ liệu:
@@ -40,5 +40,4 @@ Chuẩn hóa các giá trị pixel từ khoảng [0, 255] về [0, 1] để đ�
 - Tăng cường dữ liệu:
 Áp dụng các kỹ thuật tăng cường dữ liệu như xoay, lật, và dịch chuyển để làm phong phú tập huấn luyện và ngăn ngừa quá khớp.
 
-<[Quay lại đầu trang](#top)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+[Quay lại đầu trang](#top)
