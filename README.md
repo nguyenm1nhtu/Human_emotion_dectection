@@ -7,7 +7,7 @@
 
   1. [Giới Thiệu](#giới-thiệu)
   2. [Tiền Xử Lý](#tiền-xử-lý)
-  3. [Trích xuất đặc trưng CNN](#trích-xuất-đặc-trưng)
+  3. [Trích Xuất Đặc Trưng CNN](#trích-xuất-đặc-trưng-cnn)
 
 </details>
 
